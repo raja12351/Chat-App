@@ -21,7 +21,7 @@ enter_btn.addEventListener("click",(event)=>{
         chat_room.style.display = "block";
         input_sec.style.display = "flex";
         welcome.innerHTML = `
-        <h3>Welcome To ChatRoom ${username}</h3>`;
+        <h3>Welcome To Chat-Room ${username}</h3>`;
 
         socket.emit('user enter',username);
         document.getElementById('name_inp').value = "";
