@@ -72,7 +72,7 @@ socket.on('user enter',(username) =>{
     console.log("user is ", username);
 
     var etr = document.createElement("div");
-    etr.innerText = `${username} has joined.`;
+    etr.innerText = `${username} has joined`;
     etr.setAttribute('class',"info");
     
     messages.appendChild(etr);
@@ -87,7 +87,7 @@ socket.on('message',(data)=>{
 socket.on('user exit',(userToExit)=>{
     if(userToExit != username){
         const msgDiv = document.createElement("div");
-        msgDiv.innerText = `${userToExit} has left the chat.`;
+        msgDiv.innerText = `${userToExit} has left the chat`;
         msgDiv.setAttribute('class',"info");
 
         messages.append(msgDiv);
